@@ -2,17 +2,21 @@ import java.util.*;
 
 /**
  * Blueprint for a Deck of Cards
+ * 
+ * @Members
+ * 			<li> Card [] deck </li>
+ * 			<li> int deckSize </li>
+ * 			<li> int topCard </li>
+ * 			
  */
 public class Deck {
 
 	private int deckSize=52;
-		private Card[] deck= new Card [deckSize];
-		private Card top;
-		
-		private int topCard=0;
+	private Card[] deck= new Card [deckSize];
+	private int topCard=0;
 
 /**
- * Deck Constructor: takes no parameters. Fills a Card array with Card objects and shuffles them.		
+ * Constructor: takes no parameters. Fills a Card array with Card objects and shuffles them.		
  */
 public Deck() {
 		
@@ -29,11 +33,12 @@ public Deck() {
 			}
 				List<Card> list = Arrays.asList(deck);
 				Collections.shuffle(list);
-				//https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html#shuffle
-			
-		}
+			}
 
-
+/**
+ * Method: Deals the next card
+ * @return Card object
+ */
 public Card draw() {
 	
 	

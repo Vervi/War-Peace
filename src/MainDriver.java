@@ -16,11 +16,10 @@ import java.util.Scanner;
  * 
  * @version: 1.0
  * 
- * <br> </br>
+ * @see <a href="https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html#shuffle"> Java Algorithms </a>
+ * @see <a href ="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html"> Java Enumeration</a>
  * 
- * 		
- * 
- * 
+ *  
  */
 public class MainDriver {
 

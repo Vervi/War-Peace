@@ -1,9 +1,7 @@
 /**
  * 
- * <P> Enumeration of card values for ranking purposes. Default is runs uptown in favor of War.</p> 
- * 
- * @author zhi
- *
+ * Enumeration of card values for ranking purposes. Default runs uptown in favor of War. 
+ *  
  */
 public enum CardValue {
 

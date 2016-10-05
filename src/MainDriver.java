@@ -1,6 +1,27 @@
+
 import java.util.Scanner;
 
-
+/**
+ * 
+ * <p> Peace and War simulates two somewhat simplified versions of the classic card game War. </p>
+ * <ul>
+ * 	Gameplay:
+ * 		<ul>
+ * 			<li>Peace: A passive stroll downtown where LOW cards win the game.</li>
+ *			 <li>War: An aggressive jog uptown where HIGH cards win the game.</li>
+ * 
+ * 		</ul>
+ * </ul>
+ * @author: zhi/N.Willis
+ * 
+ * @version: 1.0
+ * 
+ * <br> </br>
+ * 
+ * 		
+ * 
+ * 
+ */
 public class MainDriver {
 
 	static final int HANDS = 52;

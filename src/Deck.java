@@ -1,6 +1,8 @@
 import java.util.*;
 
-
+/**
+ * Blueprint for a Deck of Cards
+ */
 public class Deck {
 
 	private int deckSize=52;
@@ -8,7 +10,10 @@ public class Deck {
 		private Card top;
 		
 		private int topCard=0;
-		
+
+/**
+ * Deck Constructor: takes no parameters. Fills a Card array with Card objects and shuffles them.		
+ */
 public Deck() {
 		
 			//fill deck with card objects

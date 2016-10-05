@@ -1,27 +1,42 @@
 import java.lang.Enum.*;
 
-
+/**
+ * Blueprint for Card objects.
+ */
 public class Card {
 	
 	CardValue value;
 	
 	CardSuit suit;
+
 	
-	public Card(CardValue value, CardSuit suit)
+	/**
+	 * Constructor: takes 2 parameters and creates a card object
+	 * @param value
+	 * @param suit
+	 */
+public Card(CardValue value, CardSuit suit)
 	{
 		this.value= value;
 		this.suit= suit;
-	
 	}
-		
+
+/**
+ * Method: returns name of card
+ */
 public String toString() {
 				
 		return value + " of " + suit;
 		}
 	
-
-	public Boolean winner(Card c) {
-			// this assumes that the game is running uptown (war)
+/**Method: takes a Card as a parameter. compares 2 card objects by both value and suit to
+ * determine a winner. Value supercedes suit. In cases where 2 cards of the same value are drawn
+ * suits are compared. 
+ * 
+ * @param Card
+ */
+public Boolean winner(Card c) {
+// this assumes that the game is running uptown in favor of war
 		
 		
 		Boolean win = Boolean.TRUE;
@@ -55,10 +70,6 @@ public String toString() {
 			return loss;
 		}
 		return tie;
-		
-		
 	}
 
-	
-	
 }

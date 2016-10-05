@@ -8,22 +8,30 @@ public class MainDriver {
 	public static void main(String[] args) 
 	
 	{
+		Deck player1 = new Deck();
+		Deck player2 = new Deck();
+		
+		int player1Score = 0, player2Score = 0;
+		int round = 1;
+	
+		Card p1;
+		Card p2;
+		Boolean result = null;
+		
+		
+		System.out.println("Would you like to play peace or war?");
 		Scanner cin= new Scanner(System.in);
+		
+		
 		String opt =cin.next();
+		
+		
+		
 		if(opt.equals("war")|| opt.equals("w"))
 		{
 			//proceed to play a rousting bout of war
 			cin.close();
-			Deck player1 = new Deck();
-			Deck player2 = new Deck();
-			
-			int player1Score = 0, player2Score = 0;
-			int round = 0;
 		
-			Card p1;
-			Card p2;
-			Boolean result = null;
-			
 			do
 			{	
 				p1 = player1.draw();
@@ -49,7 +57,7 @@ public class MainDriver {
 				
 				round++;
 				
-			}while(round < HANDS);
+			}while(round-1 < HANDS);
 		
 			System.out.printf("Final score: Player 1--%d; Player 2--%d", player1Score, player2Score);
 			
@@ -60,25 +68,13 @@ public class MainDriver {
 			//proceed to play a soothing game of peace
 			cin.close();
 			
-			Deck player1 = new Deck();
-			Deck player2 = new Deck();
-			
-			int player1Score = 0, player2Score = 0;
-			int round = 0;
-		
-			Card p1;
-			Card p2;
-			Boolean result = null;
-			
-			
-			
 			do
 			{	
 				p1 = player1.draw();
 				p2 = player2.draw();
 					
 				result = p1.winner(p2);
-					if(result == Boolean.TRUE)
+					if(result == Boolean.FALSE)
 					{
 						player1Score++;
 						System.out.println(p1.toString() + " beats " + p2.toString());
@@ -97,11 +93,13 @@ public class MainDriver {
 				
 				round++;
 				
-			}while(round < HANDS);
+			}while(round-1 < HANDS);
 		
 			System.out.printf("Final score: Player 1--%d; Player 2--%d", player1Score, player2Score);
+		
 			
-		  }
+			
+		}
 		else
 		{
 			System.out.println("Uh-oh. I'm having a little trouble understanding your input.");

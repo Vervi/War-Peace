@@ -27,8 +27,6 @@ public Deck() {
 				//https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html#shuffle
 			
 		}
- 
-}
 
 
 public Card draw() {

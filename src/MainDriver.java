@@ -80,7 +80,25 @@ public class MainDriver {
 			}while(round-1 < HANDS);
 		
 			System.out.printf("Final score: Player 1--%d; Player 2--%d", player1Score, player2Score);
-			
+			System.out.println("");
+														if(player1Score > player2Score)                                                                                                              
+
+                                {                                                                                                                                    
+
+                                System.out.println("Player 1 has won this bout of war.");                                                                             
+
+                                }                                                                                                                                    
+
+                                                                                                                                                                     
+
+                        else if(player1Score < player2Score)                                                                
+                              {                                                                                                                                    
+                              System.out.println("Player 2 has won this bout of war.");                                                                             
+                              }                                                                                                                                    
+                        else    
+                              {                                                                                                                                    
+                              System.out.println("It would appear that this bout of War has no victor.");                                                           
+                              }	
 			
 		}
 		else if(opt.equals("peace")|| opt.equals("p"))
@@ -116,8 +134,25 @@ public class MainDriver {
 			}while(round-1 < HANDS);
 		
 			System.out.printf("Final score: Player 1--%d; Player 2--%d", player1Score, player2Score);
-		
-			
+			System.out.println("");
+				if(player1Score > player2Score)                                                                                                              
+
+                                {                                                                                                                                    
+
+                                System.out.println("Player 1 has found Peace.");                                                                             
+
+                                }                                                                                                                                    
+
+                                                                                                                                                                     
+
+                        else if(player1Score < player2Score)                                                                
+                              {                                                                                                                                    
+                              System.out.println("Player 2 has found Peace.");                                                                             
+                              }                                                                                                                                    
+                        else    
+                              {                                                                                                                                    
+                              System.out.println("It would appear that the path to Peace is still unclear.");                                                           
+                              }	
 			
 		}
 		else

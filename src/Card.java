@@ -8,7 +8,6 @@ public class Card {
 	CardValue value;
 	
 	CardSuit suit;
-
 	
 	/**
 	 * Constructor: takes 2 parameters and creates a card object

@@ -9,5 +9,3 @@ public enum CardValue {
 	EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE
 	
 }
-
-
